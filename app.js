@@ -35,7 +35,7 @@
 
     // big faint horizontal lines
     bc.save();
-    bc.strokeStyle = 'rgba(0,209,255,0.03)';
+    bc.strokeStyle = 'rgba(0, 110, 255, 0.03)';
     bc.lineWidth = 1;
     const spacing = Math.max(48, Math.round(w/24));
     for (let y=spacing/2; y<h; y+=spacing) {
@@ -320,7 +320,7 @@
       );
       grad.addColorStop(0, 'rgba(0,209,255,0)');
       grad.addColorStop(0.5, grid.lightColor);
-      grad.addColorStop(1, 'rgba(0,209,255,0)');
+      grad.addColorStop(1, 'rgba(0, 4, 255, 0)');
 
       dCtx.fillStyle = grad;
       dCtx.globalAlpha = beam.alpha;
