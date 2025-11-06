@@ -1,3 +1,5 @@
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 var firebaseConfig = {
     apiKey: "AIzaSyCdBNcfPgGFbNsD-4OL4iHo9mBhO3opy98",
     authDomain: "client-website-fdd4a.firebaseapp.com",
@@ -16,6 +18,12 @@ var firebaseConfig = {
     var name = document.getElementById("namebox").value.trim();
     var email = document.getElementById("emailbox").value.trim();
     var message = document.getElementById("message").value.trim();
+
+ Swal.fire({
+  title: "Good job!",
+  text: "You have contacted!",
+  icon: "success"
+});
 
     var userObj = {
       User_Name: name,
