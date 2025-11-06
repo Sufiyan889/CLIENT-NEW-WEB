@@ -77,7 +77,7 @@
           <textarea id="message" required></textarea>
           <label>Your Message</label>
         </div>
-        <button type="submit" class="btn-send" onclick="submitData()">Transmit</button>
+        <a href="#" type="submit" class="btn-send" onclick="submitData()">Transmit</a>
       </form>
     </div>
   </section>
@@ -167,73 +167,7 @@
     <p>© 2025 NextGen Softworks | Crafted with ❤️ by our creative team</p>
   </div>
 </footer>
- <script>
-  // ✅ Firebase Config
-  var firebaseConfig = {
-    apiKey: "AIzaSyCdBNcfPgGFbNsD-4OL4iHo9mBhO3opy98",
-    authDomain: "client-website-fdd4a.firebaseapp.com",
-    databaseURL: "https://client-website-fdd4a-default-rtdb.firebaseio.com/",
-    projectId: "client-website-fdd4a",
-    storageBucket: "client-website-fdd4a.appspot.com",
-    messagingSenderId: "974723244847",
-    appId: "1:974723244847:web:bee5ae7bfaf331921d77da"
-  };
-
-  // ✅ Initialize Firebase once
-  var app = firebase.initializeApp(firebaseConfig);
-  var db = firebase.database();
-
-  // ✅ Function that runs on button click
-  function submitData(event) {
-    event.preventDefault(); // stop form reload
-
-    const name = document.getElementById("namebox").value.trim();
-    const email = document.getElementById("emailbox").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    if (!name || !email || !message) {
-      alert("⚠️ Please fill all fields before submitting.");
-      return;
-    }
-
-    const userObj = {
-      User_Name: name,
-      User_Email: email,
-      User_Message: message,
-      Timestamp: new Date().toLocaleString()
-    };
-
-    // ✅ Push to Firebase
-    db.ref("user").push(userObj)
-      .then(() => {
-        alert("✅ Message sent successfully!");
-        document.getElementById("namebox").value = "";
-        document.getElementById("emailbox").value = "";
-        document.getElementById("message").value = "";
-      })
-      .catch((err) => {
-        console.error("Error saving to Firebase:", err);
-        alert("❌ Something went wrong. Please try again.");
-      });
-  }
-
-  // ✅ FAQ toggle animation
-  const questions = document.querySelectorAll('.faq-question');
-  questions.forEach((question) => {
-    question.addEventListener('click', () => {
-      const parent = question.parentElement;
-      parent.classList.toggle('active');
-    });
-  });
-
-  // ✅ Navbar toggle
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.querySelector(".nav-links");
-  menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("active");
-    navLinks.classList.toggle("active");
-  });
-</script>
+ <script src="contact.js"></script>
 
 </body>
 </html>
