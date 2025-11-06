@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | NovaTech AI</title>
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+  <img src="company_logo-removebg-preview.png" class="nav-img">
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="#" class="nav-btn">Join Now</a>
+
+  <!-- Hamburger menu -->
+  <div class="menu-toggle" id="menuToggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</nav>
+
+  <section class="contact-hero">
+  <div class="light-grid"></div>
+  <div class="holo-lights"></div>
+
+  <div class="contact-container">
+    <h1 class="hero-title">Let’s <span>Connect</span></h1>
+    <p class="sub-text">
+      Step into the future of innovation. Reach out and let’s create something
+      extraordinary together.
+    </p>
+    <a href="#contact" class="glowing-btn">Start Conversation</a>
+  </div>
+</section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-glass">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>Our experts are ready to collaborate on innovative projects, futuristic ideas, or custom AI solutions.</p>
+        
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i> hello@novatech.ai
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i> +1 (415) 555-2918
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i> San Francisco, USA
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <h2>Send a Message</h2>
+        <div class="input-box">
+          <input id="namebox" type="text" required>
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <input id="emailbox" type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <textarea id="message" required></textarea>
+          <label>Your Message</label>
+        </div>
+        <button type="submit" class="btn-send" onclick="submitData()">Transmit</button>
+      </form>
+    </div>
+  </section>
+  <section class="faq-section">
+  <div class="faq-container">
+    <h2 class="faq-title"><i class="fa-solid fa-robot"></i> Frequently Asked Questions</h2>
+    <p class="faq-subtitle">Your most common questions — answered with futuristic precision ⚡</p>
+
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">
+          <i class="fa-solid fa-circle-question"></i> What is the purpose of this platform?
+          <i class="fa-solid fa-chevron-down icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Our platform is designed to revolutionize productivity through AI-driven automation and a sleek futuristic interface that adapts to your workflow.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <i class="fa-solid fa-shield-halved"></i> How secure is my data?
+          <i class="fa-solid fa-chevron-down icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Security is at our core — your data is encrypted using next-generation quantum-safe algorithms and stored in isolated cloud vaults.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Can I customize the interface?
+          <i class="fa-solid fa-chevron-down icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Our UI is modular, theme-adaptive, and supports dynamic glow modes and neural-inspired animations to match your brand energy.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <i class="fa-solid fa-rocket"></i> How do I get started?
+          <i class="fa-solid fa-chevron-down icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Just sign up, activate your neural dashboard, and launch your first AI-assisted project within minutes — no setup required.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>TECH<span>CAMI</span></h2>
+      <p>We craft digital experiences that empower businesses and drive innovation. Let’s build something extraordinary together.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-envelope"></i> hello@nextgensoft.com</p>
+      <p><i class="fas fa-phone"></i> +1 (555) 234-9987</p>
+      <p><i class="fas fa-map-marker-alt"></i> 221B Baker Street, London</p>
+      <button class="join-btn">Join Our Team</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 NextGen Softworks | Crafted with ❤️ by our creative team</p>
+  </div>
+</footer>
+ <script>
+  // ✅ Firebase Config
+  var firebaseConfig = {
+    apiKey: "AIzaSyCdBNcfPgGFbNsD-4OL4iHo9mBhO3opy98",
+    authDomain: "client-website-fdd4a.firebaseapp.com",
+    databaseURL: "https://client-website-fdd4a-default-rtdb.firebaseio.com/",
+    projectId: "client-website-fdd4a",
+    storageBucket: "client-website-fdd4a.appspot.com",
+    messagingSenderId: "974723244847",
+    appId: "1:974723244847:web:bee5ae7bfaf331921d77da"
+  };
+
+  // ✅ Initialize Firebase once
+  var app = firebase.initializeApp(firebaseConfig);
+  var db = firebase.database();
+
+  // ✅ Function that runs on button click
+  function submitData(event) {
+    event.preventDefault(); // stop form reload
+
+    const name = document.getElementById("namebox").value.trim();
+    const email = document.getElementById("emailbox").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("⚠️ Please fill all fields before submitting.");
+      return;
+    }
+
+    const userObj = {
+      User_Name: name,
+      User_Email: email,
+      User_Message: message,
+      Timestamp: new Date().toLocaleString()
+    };
+
+    // ✅ Push to Firebase
+    db.ref("user").push(userObj)
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        document.getElementById("namebox").value = "";
+        document.getElementById("emailbox").value = "";
+        document.getElementById("message").value = "";
+      })
+      .catch((err) => {
+        console.error("Error saving to Firebase:", err);
+        alert("❌ Something went wrong. Please try again.");
+      });
+  }
+
+  // ✅ FAQ toggle animation
+  const questions = document.querySelectorAll('.faq-question');
+  questions.forEach((question) => {
+    question.addEventListener('click', () => {
+      const parent = question.parentElement;
+      parent.classList.toggle('active');
+    });
+  });
+
+  // ✅ Navbar toggle
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.querySelector(".nav-links");
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

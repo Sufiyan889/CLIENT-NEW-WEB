@@ -10,33 +10,31 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <img src="company_logo-removebg-preview.png" width="110px" height="80px">
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+  <nav class="navbar">
+  <img src="company_logo-removebg-preview.png" class="nav-img">
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <a href="contact.html" class="nav-btn">Join Now</a>
+
+  <div class="menu-toggle" id="menuToggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</nav>
+  <section class="hero" id="home">
     <div class="container1">
       <h5>INNOVATIVE CREATE</h5>
       <h1>Building the <span style="color: rgb(0, 255, 255);">Future</span> of <br>Digital Intelligence</h1>
       <p>We are a next-generation software agency crafting intelligent, scalable,and design-driven digital systems that redefine innovation.From AI-powered apps to futuristic web platforms —we turn vision into experience, and technology into transformation.</p>
-      <button><a href="#" style="color: white; text-decoration: none;">Start your project</a></button>
+      <button id="herobut"><a href="contact.html" style="color: white; text-decoration: none;">Start your project</a></button>
       </div>
   </section>
   <section class="herocards">
@@ -50,7 +48,7 @@
       <h1>+50</h1>
       <hr>
     </div>
-    <div class="col-lg-3" id="herocard">
+    <div class="col-lg-3" id="herocard" style="box-shadow: 5px 5px 40px blue;">
       <i class="fa-solid fa-people-group fa-bounce fa-2xl" style="color: #001aff;"></i>
       <hr>
       <h2>TEAM <br> MEMEBERS</h2>
@@ -69,89 +67,270 @@
       </div>
     </div>
   </section>
-  <section class="about">
-    <div class="container" id="innerabout">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>ABOUT US</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda praesentium porro voluptatibus reiciendis corporis esse architecto dolorum id ullam minima, ipsa corrupti, delectus excepturi error omnis illo numquam odio.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda</p>
-          <button><a href="#" style="color: white; text-decoration: none;">MORE ABOUT</a></button>
-          <button><a href="#" style="color: white; text-decoration: none;">VIEW WORK</a></button>
+<section id="about" class="about">
+  <div class="about-container">
+    <div class="about-content">
+      <h2 class="about-title">
+        We design brands that <span>stand out</span> in the digital era.
+      </h2>
+      <p class="about-text">
+        We are a creative design agency focused on crafting timeless brand
+        identities and immersive digital experiences. Our team blends strategy,
+        art direction, and technology to deliver impactful visuals that connect
+        with your audience.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <h3>120+</h3>
+          <p>Projects Completed</p>
         </div>
-        <div class="col-lg-6">
-          <img src="download1.jpg" alt="">
+        <div class="stat">
+          <h3>40+</h3>
+          <p>Brands Empowered</p>
+        </div>
+        <div class="stat">
+          <h3>6+</h3>
+          <p>Years of Experience</p>
         </div>
       </div>
+      <a href="about.html"><button class="about-btn">Learn More →</button></a>
     </div>
+
+    <div class="about-image">
+      <img
+        src="about-square-8 (1).webp"
+        alt="Creative Team"
+      />
+    </div>
+  </div>
+</section>
+
+   <section id="services" class="services">
+    <div class="services-header">
+      <h2>Services</h2>
+      <div class="services-count"><span class="dot"></span> 04 Services</div>
+    </div>
+    <div class="services-list">
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-left">
+            <span class="service-number">(1)</span>
+            <h3>App-Development</h3>
+          </div>
+          <button class="service-toggle">↗</button>
+        </div>
+
+        <div class="service-content">
+          <div class="service-image">
+            <img src="https://t4.ftcdn.net/jpg/02/00/20/89/360_F_200208909_tvpqUno6arZycC8jWtduKEITDcqszvwj.jpg" alt="Branding" />
+          </div>
+          <ul class="service-details">
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Branding</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Brand Identity</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Logo Design</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> UX Design</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Product Development</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-left">
+            <span class="service-number">(2)</span>
+            <h3>Web-Development</h3>
+          </div>
+          <button class="service-toggle">↗</button>
+        </div>
+
+        <div class="service-content">
+          <div class="service-image">
+            <img src="data:image/jpeg;base64,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" alt="Web Design" />
+          </div>
+          <ul class="service-details">
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Responsive Websites</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> SEO Optimization</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> UI/UX Design</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Webflow / WordPress</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-left">
+            <span class="service-number">(3)</span>
+            <h3>Ai-Automation</h3>
+          </div>
+          <button class="service-toggle">↗</button>
+        </div>
+
+        <div class="service-content">
+          <div class="service-image">
+            <img src="https://hbr.org/resources/images/article_assets/2024/06/Automation-by-Broadcom-AI-WLA-Hero-Image-1200x675-1.png" alt="Motion Design" />
+          </div>
+          <ul class="service-details">
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Smart Integration with Systems</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Robotic Process Automation</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Process Optimization</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Intelligent Chatbots</li>
+            <li><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #005eff;"></i> Predictive Analytics</li>
+          </ul>
+        </div>
+      </div>      
+    </div>
+    <a href="services.html"><button class="services-btn">More Services</button></a>
   </section>
-  <h1 style="text-align: center; background-color: black; font-size: 56px; padding-bottom: 1pc; padding-top: 1pc; margin-bottom: -0.5pc; margin-top: 2pc;">SERVICES AND TOOLS</h1>
-  <section class="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-12 card1" id="card">
-          <h3>Game Development</h3>
-          <hr>
-          <i class="fa-solid fa-gamepad fa-bounce fa-2xl" style="color: #001aff;"></i>
-          <hr>
-          <ul>
-            <li>Creative Worlds</li>
-            <li>Engrossing Play</li>
-            <li>Memorable Fun.</li>
-          </ul>
-          <hr>
-        </div>
-        <div class="col-lg-3 col-12" id="card">
-          <h3>Game Development</h3>
-          <hr>
-          <i class="fa-solid fa-gamepad fa-bounce fa-2xl" style="color: #001aff;"></i>
-          <hr>
-          <ul>
-            <li>Creative Worlds</li>
-            <li>Engrossing Play</li>
-            <li>Memorable Fun.</li>
-          </ul>
-          <hr>
-        </div>
-        <div class="col-lg-3 col-12" id="card">
-          <h3>Game Development</h3>
-          <hr>
-          <i class="fa-solid fa-gamepad fa-bounce fa-2xl" style="color: #001aff;"></i>
-          <hr>
-          <ul>
-            <li>Creative Worlds</li>
-            <li>Engrossing Play</li>
-            <li>Memorable Fun.</li>
-          </ul>
-          <hr>
+<section id="projects" class="projects">
+  <div class="projects-header">
+    <h2>Featured <span>Projects</span></h2>
+    <p>We build timeless digital experiences that connect design and storytelling.</p>
+  </div>
+
+  <div class="projects-showcase">
+    <div class="project" style="--bg:url('Screenshot 2025-09-29 224138.png')">
+      <div class="overlay"></div>
+      <div class="project-content">
+        <h3>Urban Echo</h3>
+        <p>Brand Identity & Experience</p>
+      </div>
+    </div>
+
+    <div class="project" style="--bg:url('Screenshot 2025-09-29 224803.png')">
+      <div class="overlay"></div>
+      <div class="project-content">
+        <h3>Nova Flow</h3>
+        <p>Website & UI Design</p>
+      </div>
+    </div>
+
+    <div class="project" style="--bg:url('Screenshot 2025-09-29 224227.png')">
+      <div class="overlay"></div>
+      <div class="project-content">
+        <h3>Pulse Motion</h3>
+        <p>Motion Design & Visual Storytelling</p>
+      </div>
+    </div>
+    <a href="projects.html"><button class="projects-btn">More Projects</button></a>
+  </div>
+</section>
+<section class="client-reviews">
+  <h2 class="section-title">What Our Clients Say</h2>
+  <p class="section-subtitle">Trusted by innovators, startups, and enterprises across the globe.</p>
+
+  <div class="reviews-container">
+    <div class="review-card">
+      <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      <p class="review-text">
+        “Working with <strong>NovaTech</strong> transformed our business. Their AI integration and automation boosted efficiency beyond expectations.”
+      </p>
+      <div class="client-info">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="client">
+        <div>
+          <h4>James Carter</h4>
+          <p>CEO, QuantumWave</p>
         </div>
       </div>
     </div>
-    <div class="tools">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2" id="cardstools">
-           <img src="download__1_-removebg-preview (1).png">
-          </div>
-          <div class="col-lg-2" id="cardstools">
-           <img src="download__1_-removebg-preview (1).png">
-          </div>
-          <div class="col-lg-2" id="cardstools">
-           <img src="download__2_-removebg-preview (1).png">
-          </div>
-          <div class="col-lg-2" id="cardstools">
-           <img src="download__3_-removebg-preview (1).png">
-          </div>
-          <div class="col-lg-2" id="cardstools">
-           <img src="download__2_-removebg-preview (1).png">
-          </div>
-          <div class="col-lg-2" id="cardstools">
-           <img src="download__1_-removebg-preview (2).png">
-          </div>
+
+    <div class="review-card">
+      <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      <p class="review-text">
+        “Their design team crafted an absolutely stunning interface. Every pixel feels premium — pure futuristic aesthetics.”
+      </p>
+      <div class="client-info">
+        <img src="https://randomuser.me/api/portraits/women/31.jpg" alt="client">
+        <div>
+          <h4>Emily Zhang</h4>
+          <p>Product Lead, MetaVision</p>
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="review-card">
+      <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      <p class="review-text">
+        “Incredible partnership! Their software engineers are artists — our platform runs flawlessly and looks beautiful.”
+      </p>
+      <div class="client-info">
+        <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="client">
+        <div>
+          <h4>David Miller</h4>
+          <p>CTO, AIon Labs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="join-us-section" id="join">
+  <div class="join-container">
+    <div class="join-content">
+      <h2>🚀 Join Our Creative Force</h2>
+      <p>
+        At <span>NextGen Software Agency</span>, we’re shaping the digital future — one line of code at a time.  
+        If you’re passionate about building scalable solutions, creating seamless designs, or pushing AI boundaries, we want you with us.
+      </p>
+      <div class="join-buttons">
+        <a href="#careers" class="join-btn primary">Join Our Team</a>
+        <a href="contact.html" class="join-btn secondary">Partner With Us</a>
+      </div>
+    </div>
+
+    <div class="join-visual">
+      <div class="glow-circle"></div>
+      <img src="efc77f49-4945-4c51-b0aa-97fbedc2cd45.png" alt="Join Us" class="join-img" />
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>TECH<span>CAMI</span></h2>
+      <p>We craft digital experiences that empower businesses and drive innovation. Let’s build something extraordinary together.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-envelope"></i> techcami@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +92 3350881876</p>
+      <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan.</p>
+      <a href="contact.html"><button class="join-btn">Join Our Team</button></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 NextGen Softworks | Crafted with ❤️ by our creative team</p>
+  </div>
+</footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="app.js"></script>
+  <script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
