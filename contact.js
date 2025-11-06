@@ -25,13 +25,14 @@ var firebaseConfig = {
 
     db.ref("user").push(userObj)
   }
-  const questions = document.querySelectorAll('.faq-question');
-  questions.forEach((question) => {
-    question.addEventListener('click', () => {
-      const parent = question.parentElement;
-      parent.classList.toggle('active');
-    });
+  const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
   });
+});
+
 
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.querySelector(".nav-links");
